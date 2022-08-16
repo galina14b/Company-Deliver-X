@@ -1,0 +1,61 @@
+//Breakpoints ====================================================================
+
+// desktop:
+$dt: 1200px;
+
+// laptop:
+$lt: 1024px;
+
+// tablet:
+$tb: 768px;
+
+//mobile:
+$mb: 320px;
+
+// Максимальная ширина экрана, согласно макету
+
+$maxWidth: 1400px;
+
+// Ширина ограниченного контента
+
+$maxWidthContainer: 1200px;
+
+// Ширина "обрамления" элемента
+
+$padding-frame: 30px;
+
+
+// 320px — 480px: Mobile devices
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+// 1025px — 1200px: Desktops, large screens
+// 1201px and more —  Extra large screens, TV
+
+//Colors ==========================================================================
+
+$color-main     : #121212;         
+$color-secondary: #FFFFFF;
+$color-third    : #FF5634;
+
+//Normalize =========================================================================
+
+@import "parts/_normalize";
+
+//==================================================================================
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #656565;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  scroll-behavior: smooth;
+}
+
+@import "parts/_header";
+@import "parts/_main";
+@import "parts/_footer";

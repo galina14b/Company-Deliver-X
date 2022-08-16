@@ -1,0 +1,1603 @@
+/* Delicious Particle ============================================================================================== */ 
+
+.background {
+  background-image: url('../img/background/delicious.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 31.9vw;
+  height: 100vh;
+
+  @media screen and (max-width: 1440px){
+    width: 31.931vw;
+  };
+
+  @media screen and (max-width: $tb){
+    display: none;
+  };
+}
+
+.delicious-particle {
+  padding: 0 $padding-frame;
+  display: flex;
+  max-width: $maxWidthContainer;
+  justify-content: flex-start;
+  padding-top: calc(60px + (140 - 60) * ((100vw - 320px) / (1200 - 320)));
+
+  @media screen and (min-width: 1820px){
+    justify-content: space-between;
+  }; 
+
+  @media screen and (max-width: $tb){
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+  };
+
+  @media screen and (max-width: 560px){
+    padding-top: 40px;
+  };
+}
+
+.delicious {
+
+  &__text {
+    padding: 0 $padding-frame;
+    padding-left: 0;
+    max-width: calc(310px + (600 - 310) * ((100vw - 320px) / (1200 - 320)));
+
+    @media screen and (max-width: 817px) and (min-width: 769px) {
+      max-width: 335px;
+    };
+
+    @media screen and (max-width: $tb) {
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    & hr {
+      background: #CACACA;
+      border-radius: 0px;
+      height: 1px;
+      max-width: calc(310px + (586 - 310) * ((100vw - 320px) / (1200 - 320)));
+      margin: 60px 0;
+    }
+  }
+
+  &__img {
+    padding-left: 20px;
+
+    @media screen and (max-width: 1180px){
+      padding-left: 0;
+    };
+
+    @media screen and (max-width: 900px) {
+      padding-top: 60px;
+    }
+
+    @media screen and (max-width: $tb) {
+      margin: 0 auto;
+      width: 100vw;
+      background-image: url(../img/background/delicious.png);
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+ 
+    & img {
+
+      @media screen and (max-width: $tb){
+        display: block;
+        margin-left: 40px;
+      };
+
+      @media screen and (max-width: 500px) {
+        max-width:  300px;
+      }
+
+      @media screen and (max-width: 450px){
+        margin-left: 5px;
+      };
+    };
+  }
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(42px + (62 - 42) * ((100vw - 320px) / (1200 - 320)));
+  line-height: calc(52px + (72 - 52) * ((100vw - 320px) / (1200 - 320)));
+  color: $color-main;
+  margin: 0;
+  margin-top: 30px;
+
+}
+
+.title-colored {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  color: $color-third;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.delicious__btn {
+  max-width: 485px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  @media screen and (max-width: 910px) {
+    flex-wrap: wrap;
+    width: fit-content;
+  }
+
+  @media screen and (max-width: $tb){
+    max-width: 454px;
+  };
+
+  @media screen and (max-width: 500px) {
+    width: 300px;
+    margin: 0 auto;
+  };
+
+  & a {
+    @media screen and (max-width: 910px) {
+      &:last-child {
+        margin-top: 20px;
+        }
+      }
+    @media screen and (max-width: $tb){
+      margin: 0 auto;
+    };
+  }
+}
+
+
+
+.btn_wide {
+  width: 250px;
+  height: 75px;
+  border-radius: 16px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.btn_narrow {
+  width: 205px;
+  height: 75px;
+  border-radius: 16px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.delicious-inner hr {
+  margin: 60px auto;
+
+  @media screen and (max-width: 900px) {
+    margin: 30px auto;
+  }
+}
+
+.delicious__statistic {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+
+  & span {
+      font-weight: 400;
+      color: $color-third;
+    }
+
+  & p {
+    margin: 5px 0;
+    text-align: center;
+
+    @media screen and (max-width: 778px){
+      width: 150px;
+    };
+
+    @media screen and (max-width: 400px) {
+      margin-top: 0;
+      margin-bottom: 10px;
+    };
+  }
+}
+
+.statistic-number {
+  font-weight: 700;
+  font-size: calc(36px + (56 - 36) * ((100vw - 320px) / (1200 - 320)));
+  line-height: calc(46px + (66 - 46) * ((100vw - 320px) / (1200 - 320)));
+  color: #121212;
+  margin: 0;
+  padding: 0 20px 0 0;
+
+  @media screen and (max-width: 900px) {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.statistic_inner {
+  padding: 0 5px;
+
+  @media screen and (max-width: 900px) {
+    &:last-child {
+      margin: 0 auto 20px;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    margin: 0 auto;
+  };
+}
+
+// Restourant Particle ======================================================================
+
+.container {
+  max-width: $maxWidthContainer;
+}
+
+.restourant-particle {
+
+  padding: 140px $padding-frame 0;
+
+  @media screen and (max-width: 500px){
+    padding-top: 100px;
+  };
+  
+  & p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.line {
+   
+  height: 1px;
+  background: #CACACA;
+  border-radius: 0px;
+  
+}
+
+.icons-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: calc(50px + (140 - 50) * ((100vw - 320px) / (1200 - 320)));;
+        
+
+  &__items {
+    padding: 10px;
+    margin: 0 auto;
+  }
+}
+
+// How-works Particle =======================================================================================
+
+.primary-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(34px + (44 - 34) * ((100vw - 320px) / (1200 - 320)));
+  line-height: calc(44px + (54 - 44) * ((100vw - 320px) / (1200 - 320)));
+  text-align: center;
+  margin: 0;
+  color: $color-main;
+}
+
+.how-works {
+
+  &__particle {
+    margin-top: calc(80px + (200 - 80) * ((100vw - 320px) / (1200 - 320)));;
+  }
+
+  &__text {
+    max-width: 675px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    & p {
+      margin: 20px 0;
+    }
+  }
+
+  &__steps {
+    margin: 70px auto 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 981px){
+      flex-wrap: wrap;
+    };
+  }
+
+  &__btn {
+    margin: 60px auto 0;
+    max-width: 480px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc(80px + (200 - 80) * ((100vw - 320px) / (1200 - 320)));
+
+    @media screen and (max-width: 910px) {
+      flex-wrap: wrap;
+      width: fit-content;
+    }
+    
+    @media screen and (max-width: $tb) {
+      max-width: 454px;
+    };
+    
+    @media screen and (max-width: 500px) {
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    };
+    
+    & a {
+      
+      @media screen and (max-width: $tb) {
+        
+        &:last-child {
+            margin-top: 20px;
+          }
+        
+          margin: 0 auto;
+      };
+    }
+  } 
+}
+
+.steps__item {
+
+  text-align: center;
+  padding: 0 15px;
+
+  @media screen and (max-width: 981px) {
+      margin: 20px auto;
+    };
+  
+  & img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  & h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    margin: 30px 0 0;
+    color: $color-main;
+  }
+
+  & p {
+    margin: 15px 0 0;
+  }
+}
+
+//Learn-particle ===============================================================================================================
+
+.learn-particle {
+  margin-top: calc(80px + (200 - 80) * ((100vw - 320px) / (1200 - 320)));
+  padding: 0 $padding-frame;
+    
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+
+    @media screen and (max-width: 767px){
+      flex-wrap: wrap;
+    };
+  }
+
+  &__text {
+    max-width: 600px;
+    text-align: left;
+    padding-right: 100px;
+
+    @media screen and (max-width: 767px){
+      margin: 0 auto;
+      padding-right: 0;
+      text-align: center;
+    };
+
+    & h2{
+      text-align: left;
+      max-width: 500px;
+      padding: 0 10px;
+
+      @media screen and (max-width: 767px) {
+        text-align: center;
+        margin: 10px auto;
+      };
+    }
+
+    & p {
+      max-width: 500px;
+      padding: 0 10px;
+
+      @media screen and (max-width: 767px) {
+        text-align: center;
+        margin: 10px auto;
+      };
+    }
+  }
+
+  &__images {
+
+    @media screen and (max-width: 767px){
+      margin-top: 80px;
+    };
+
+    @media screen and (max-width: 405px) {
+      margin: 80px auto 0;
+    };
+
+    &_app {
+      position: absolute;
+      left: 50vw;
+      z-index: -1;
+
+      @media screen and (max-width: 767px) {
+        right: 0;
+        left: auto;
+        z-index: 0;
+      };
+
+      @media screen and (max-width: 405px){
+        position: static;
+      };
+    }
+    
+    &_food {
+      width: 100%;
+
+      @media screen and (max-width: 1110px) and (min-width: 767px){
+        padding-top: calc(390px - (390 - 20) * ((100vw - 767px) / (1110 - 767)));;
+      };
+
+      @media screen and (max-width: 405px){
+        display: none;
+      };
+    }
+  }
+
+  &__btn {
+    margin: 80px auto 200px;
+    max-width: 480px;
+    display: flex;
+    justify-content: space-between;
+    
+    @media screen and (max-width: 910px) {
+      flex-wrap: wrap;
+      width: fit-content;
+    }
+    
+    @media screen and (max-width: $tb) {
+      max-width: 454px;
+    };
+
+    @media screen and (max-width: 680px) {
+      margin-bottom: 80px;
+    }
+    
+    @media screen and (max-width: 501px) {
+      width: 300px;
+      margin: 100px auto 50px;
+    }
+
+    @media screen and (max-width: 330px){
+      width: 260px;
+    };
+    
+    & a {
+
+       margin: 0 auto;
+    
+      @media screen and (max-width: $tb) {
+
+        &:last-child {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+.four-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 50px;
+  max-width: 600px;
+  margin-top: 30px;
+
+  @media screen and (max-width: 939px){
+    grid-gap: 5px;
+  };
+
+  @media screen and (max-width: 501px){
+    display: block;
+  };
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: $color-main;
+    margin-top: 0;
+  }
+
+  &__item {
+    padding: 0 10px;
+
+    @media screen and (max-width: 501px) {
+      margin-top: 60px;
+    }
+  }
+}
+
+//Burger Particle ==============================================================================================================
+
+.black-background {
+  background-color: $color-main;
+  max-height: 855px;
+}
+
+.burger-particle {
+
+  padding: 0 $padding-frame;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 570px) {
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    max-width: 580px;
+    padding-top: 270px;
+
+
+    @media screen and (max-width: 1330px){
+      max-width: 440px;
+    };
+
+    @media screen and (min-width: 1085px) and (max-width: 1181px) {
+      max-width: 350px;
+      padding-top: 200px;
+    };
+
+    @media screen and (min-width: 1024px) and (max-width: 1085px) {
+      max-width: 300px;
+      padding-top: 170px;
+    };
+
+    @media screen and (max-width: 1024px){
+      padding-left: 15px;
+      padding-right: 15px;
+    };
+
+    @media screen and (max-width: 570px) {
+      padding-top: 115px;
+    }
+
+    & h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: calc(36px + (56 - 36) * ((100vw - 320px) / (1200 - 320)));
+      line-height: calc(46px + (66 - 46) * ((100vw - 320px) / (1200 - 320)));
+      color: $color-secondary;
+      margin: 0;
+    }
+
+    & p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    padding-top: 30px;
+    padding-bottom: 260px;
+
+    @media screen and (max-width: 570px) {
+      padding-bottom: 80px;
+    }
+  }
+
+  &__images {
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+
+    @media screen and (max-width: 1024px){
+      position: static;
+    };
+
+    & img {
+      overflow: hidden;
+      @media screen and (max-width: 570px) {
+        width: 100%;
+      }
+    }
+
+    &_column {
+      display: grid;
+      grid-gap: 30px;
+
+      @media screen and (max-width: 570px) {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 80px;
+        }
+
+      &:last-child {
+          margin-left: 30px;
+
+        @media screen and (max-width: 1024px){
+          display: none;
+        };
+      }
+    }
+  }
+}
+
+.hidden {
+  @media screen and (max-width: 570px){
+    display: none;
+  };
+}
+
+//Why-Deliver Particle ======================================================================================================
+
+.why-deliver {
+
+  &__particle {
+    margin-top: calc(80px + (200 - 80) * ((100vw - 320px) / (1200 - 320)));
+  }
+
+  &__text {
+    max-width: 675px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    & p {
+      margin: 20px 0;
+    }
+  }
+
+  &__reasons {
+    margin: 70px auto 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 981px) {
+      flex-wrap: wrap;
+    };
+  }
+
+  &__btn {
+    margin: 60px auto 0;
+    max-width: 480px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc(80px + (200 - 80) * ((100vw - 320px) / (1200 - 320)));
+
+    @media screen and (max-width: 910px) {
+      flex-wrap: wrap;
+      width: fit-content;
+    }
+
+    @media screen and (max-width: $tb) {
+      max-width: 454px;
+    };
+
+    @media screen and (max-width: 500px) {
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    & a {
+
+      @media screen and (max-width: $tb) {
+
+        &:last-child {
+          margin-top: 20px;
+        }
+
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.second {
+  @media screen and (max-width: 981px) {
+  margin-top: 0;
+  }
+}
+
+.first {
+  @media screen and (max-width: 981px) {
+    margin-bottom: 0;
+  }
+}
+
+.reasons__item {
+
+  text-align: center;
+  padding: 0 15px;
+
+  @media screen and (max-width: 981px) {
+    margin: 20px auto;
+  }
+
+  & img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  & h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    margin: 30px 0 0;
+    color: $color-main;
+  }
+
+  & p {
+    margin: 15px 0 0;
+  }
+}
+
+// Hassle Particle ========================================================================================================
+
+.hassle-particle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $padding-frame;
+
+  @media screen and (max-width: 950px) {
+    flex-wrap: wrap;
+  };
+
+  @media screen and (max-width: 650px){
+    padding: 0 10px;
+  };
+
+  &__box {
+    width: 600px;
+    height: 690px;
+    background: $color-third;
+    border-radius: 32px;
+
+    @media screen and (max-width: 950px) {
+      margin: 0 auto;
+    };
+  }
+
+  & h2 {
+    text-align: left;
+
+    @media screen and (max-width: 950px) {
+      text-align: center;
+    };
+  }
+
+  &__text {
+    max-width: 480px;
+    padding-top: 145px;
+    padding-left: 15px;
+
+    @media screen and (max-width: 1031px) {
+      max-width: 440px;
+    };
+
+    @media screen and (max-width: 950px) {
+      margin: 0 auto;
+      max-width: 600px;
+    };
+
+    @media screen and (max-width: 650px) {
+      padding-top: 80px;
+    };
+  }
+
+  &__icons  {
+    margin-top: 30px;
+
+    @media screen and (max-width: 950px) {
+      margin: 30px auto 0;
+    }
+  }
+}
+
+.app-image {
+  position: relative;
+  top: 70px;
+  left: 60px;
+
+  @media screen and (max-width: 1150px){
+    left: 20px;
+  };
+
+  @media screen and (max-width: 950px) {
+      left: 85px;
+  };
+
+  @media screen and (max-width: 650px) {
+    left: 65px;
+    width: 300px;
+  };
+
+  @media screen and (max-width: 560px) {
+    left: 5px;
+  }
+
+  @media screen and (max-width: 360px) {
+    width: 250px;
+  }
+}
+
+.photo-image {
+  position: relative;
+  top: -500px;
+  left: 200px;
+
+  @media screen and (max-width: 1150px) {
+    left: 150px;
+  };
+
+  @media screen and (max-width: 1100px) {
+    left: 100px;
+  };
+
+  @media screen and (max-width: 1031px) {
+    left: 65px;
+  };
+
+  @media screen and (max-width: 950px) {
+    left: 225px;
+  };
+
+  @media screen and (max-width: 650px) {
+    left: -94px;
+    top: -169px;
+    width: 250px;
+  };
+
+  @media screen and (max-width: 575px){
+    left: 195px;
+    top: -420px;
+  };
+
+  @media screen and (max-width: 522px) {
+    left: 133px;
+  }
+
+  @media screen and (max-width: 420px) {
+    width: 215px;
+  }
+
+  @media screen and (max-width: 377px) {
+    left: 114px;
+  }
+
+  @media screen and (max-width: 360px) {
+    width: 175px;
+    top: -320px;
+    left: 104px;
+  }
+}
+
+.icons__item {
+  display: flex;
+  justify-content: space-between;
+  max-width: 570px;
+}
+
+.icons__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $color-main;
+  margin: 0;
+}
+
+.icons-text {
+  max-width: 470px;
+}
+
+//Convenient Particle =======================================================================================================
+
+.convenient-particle {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px $padding-frame 0;
+
+  @media screen and (max-width: 950px) {
+    flex-wrap: wrap;
+  };
+
+  @media screen and (max-width: 650px) {
+    padding: 80px 10px;
+  };
+
+  &__box {
+    width: 600px;
+    height: 690px;
+    background: $color-third;
+    border-radius: 32px;
+
+    @media screen and (max-width: 950px) {
+      margin: 50px auto 0;
+    };
+  }
+
+  & h2 {
+    text-align: left;
+
+    @media screen and (max-width: 950px) {
+      text-align: center;
+    };
+  }
+
+  &__text {
+    max-width: 480px;
+    padding-top: 145px;
+    padding-left: 15px;
+
+    @media screen and (max-width: 1031px) {
+      max-width: 440px;
+    };
+
+    @media screen and (max-width: 950px) {
+      margin: 0 auto;
+      max-width: 600px;
+      padding-top: 0;
+    };
+  }
+
+  &__icons {
+    margin-top: 30px;
+
+    @media screen and (max-width: 950px) {
+      margin: 30px auto 0;
+    };
+  }
+}
+
+.icons__item {
+  display: flex;
+  justify-content: space-between;
+  max-width: 570px;
+}
+
+.icons__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $color-main;
+  margin: 0;
+}
+
+.icons-text {
+  max-width: 470px;
+}
+
+.convenient-app-image {
+  position: relative;
+  top: 70px;
+  right: -180px;
+
+  @media screen and (max-width: 1110px) {
+    right: -150px;
+  }
+  
+  @media screen and (max-width: 1088px) {
+    right: -120px;
+  }
+
+  @media screen and (max-width: 1050px) {
+    right: -95px;
+  };
+
+  @media screen and (max-width: 981px) {
+    right: -70px;
+  }
+  
+  @media screen and (max-width: 950px) {
+    left: 85px;
+  }
+     
+  @media screen and (max-width: 650px) {
+    left: 65px;
+    width: 300px;
+  }
+      
+  @media screen and (max-width: 560px) {
+    left: 5px;
+  }
+    
+  @media screen and (max-width: 360px) {
+    width: 250px;
+  }
+}
+
+.convenient-photo-image {
+  position: relative;
+  top: -495px;
+  right: -60px;
+
+    @media screen and (max-width: 1050px) {
+      right: -50px;
+    }
+  
+    @media screen and (max-width: 950px) {
+    left: 225px;
+    }
+    
+    @media screen and (max-width: 650px) {
+      left: -94px;
+      top: -169px;
+      width: 250px;
+    }
+        
+    @media screen and (max-width: 575px) {
+      left: 195px;
+      top: -420px;
+    }
+    
+    @media screen and (max-width: 522px) {
+      left: 133px;
+    }
+    
+    @media screen and (max-width: 420px) {
+      width: 215px;
+    }
+    
+    @media screen and (max-width: 377px) {
+      left: 114px;
+    }
+    
+    @media screen and (max-width: 360px) {
+      width: 175px;
+      top: -320px;
+      left: 104px;
+    }
+}
+
+//Clients Particle =============================================================================================================
+
+.grey-background {
+  background-color: #FAFAFA;
+}
+
+.clients-particle {
+  margin-top: 200px;
+  padding: 200px $padding-frame 330px;
+
+  @media screen and (max-width: 1025px){
+    padding-bottom: 180px;
+  };
+
+  @media screen and (max-width: 695px) {
+    padding: 100px 15px 200px;
+  };
+
+  @media screen and (max-width: 650px){
+    margin-top: 0;
+  };
+
+  @media screen and (max-width: 490px) {
+    padding: 100px 15px 95px;
+  };
+
+  &__btn {
+    margin-top: 55px;
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+  
+      @media screen and (max-width: 1029px) {
+        flex-wrap: wrap;
+        width: 454px;
+        margin: 0;
+        justify-content: flex-end;
+
+        & a {
+
+          &:last-of-type {
+            margin-top: 10px;
+          }
+        }
+      }
+  
+      @media screen and (max-width: $tb) {
+        max-width: 454px;
+      }
+  
+      @media screen and (max-width: 501px) {
+        width: 300px;
+        margin: 100px auto 50px;
+      }
+  
+      & a {
+  
+        margin: 0 auto;
+
+        @media screen and (max-width: 1029px){
+          margin: 0;
+        };
+  
+        @media screen and (max-width: $tb) {
+  
+          &:last-child {
+            margin-top: 20px;
+          }
+        }
+      }
+
+    @media screen and (max-width: 695px) {
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }  
+
+  &__cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    max-width: $maxWidth;
+
+    @media screen and (max-width: 1170px){
+      grid-gap: 15px;
+    };
+
+    @media screen and (max-width: 1029px) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+      max-width: 750px;
+      margin: 50px auto 0;
+    };
+
+    @media screen and (max-width: 817px) {
+      grid-gap: 20px;
+    };
+
+    @media screen and (max-width: 637px) {
+      grid-gap: 10px;
+    };
+
+    @media screen and (max-width: 618px) {
+      display: block;
+      margin: 0 auto;
+    };
+
+    @media screen and (max-width: 335px) {
+      max-width: 266px;
+    }
+  }
+}
+
+.title-block {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1029px){
+    align-items: flex-start;
+  };
+
+  @media screen and (max-width: 695px) {
+    flex-wrap: wrap;
+  }
+  
+  & h2 {
+    text-align: left;
+
+    @media screen and (max-width: 695px) {
+    text-align: center;
+    }    
+  }
+
+  &__text {
+    max-width: 465px;
+    padding-right: 20px;
+
+    @media screen and (max-width: 695px){
+      text-align: center;
+      margin: 0 auto;
+      padding-right: 0;
+    }
+  }
+}
+
+.cards-block {
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  box-shadow: 0px 2px 12px rgba(16, 16, 16, 0.08);
+  border-radius: 24px;
+  max-width: 355px;
+  height: 260px;
+  
+  @media screen and (max-width: 1029px) {
+    margin: 0 auto;
+  };
+
+  @media screen and (max-width: 618px) {
+    margin: 20px auto 0;
+  };
+}
+
+.item {
+
+  &__frame {
+    margin: 40px 30px 50px;
+
+    @media screen and (max-width: 1092px) {
+      margin: 30px 30px 20px;
+    };
+
+    @media screen and (max-width: 736px) {
+      margin: 30px 30px 20px;
+    };
+
+    @media screen and (max-width: 618px) {
+      margin: 40px 30px 50px;
+    };
+
+    @media screen and (max-width: 395px) {
+      margin: 30px 30px 20px;
+    }
+  }
+
+  &__inner {
+    width: 300px;
+
+    @media screen and (max-width: 1170px) {
+      width: 275px;
+    };
+
+    @media screen and (max-width: 1092px) {
+      width: 255px;
+    };
+
+    @media screen and (max-width: 1029px) {
+      width: 300px;
+    };
+
+    @media screen and (max-width: 790px) {
+      width: 270px;
+    };
+
+    @media screen and (max-width: 736px) {
+      width: 255px;
+    };
+
+    @media screen and (max-width: 700px) {
+      width: 230px;
+    }
+    
+    @media screen and (max-width: 618px) {
+      width: 300px;
+    };
+
+    @media screen and (max-width: 395px) {
+      width: 255px;
+    }
+    
+    @media screen and (max-width: 335px) {
+      width: 220px;
+    }    
+  }
+
+  &__avatar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  &__avatar-name {
+    padding-left: 10px;
+
+    & p {
+
+      &:first-of-type {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        margin: 0
+      }
+
+      &:last-of-type {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: $color-third;
+        margin: 0;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+//Start Particle =============================================================================================================
+
+.start-particle {
+
+  padding: 0 $padding-frame;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 618px) {
+    flex-wrap: wrap;
+  };
+
+  &__text {
+    max-width: 580px;
+    padding-top: 270px;
+
+
+    @media screen and (max-width: 1330px) {
+      max-width: 440px;
+      padding-top: 180px;
+    }
+
+    @media screen and (min-width: 1085px) and (max-width: 1181px) {
+      max-width: 350px;
+      padding-top: 145px;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1085px) {
+      max-width: 300px;
+      padding-top: 130px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: 375px;
+    }
+
+    @media screen and (max-width: 870px) {
+      width: 280px;
+    }
+
+    @media screen and (max-width: 870px) {
+      padding-top: 110px;
+    }
+
+    @media screen and (max-width: 618px) {
+      width: 400px;
+      margin: 0 auto;
+      text-align: center;
+    };
+
+    & h2 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: calc(36px + (56 - 36) * ((100vw - 320px) / (1200 - 320)));
+      line-height: calc(46px + (66 - 46) * ((100vw - 320px) / (1200 - 320)));
+      color: $color-secondary;
+      margin: 0;
+    }
+
+    & p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    padding-top: 30px;
+    padding-bottom: 170px;
+
+    @media screen and (max-width: 570px) {
+      padding-bottom: 80px;
+    }
+
+    @media screen and (max-width: 910px) {
+      padding-bottom: 115px;
+    }
+  }
+
+  &__images {
+    margin-bottom: 90px;
+    display: flex;
+    position: absolute;
+    right: 0;
+
+    @media screen and (max-width: 618px){
+      position: static;
+      display: block;
+      margin: 0 auto;
+    };
+
+    & img {
+      position: relative;
+      bottom: 90px;
+
+      &:first-of-type {
+        z-index: 1;
+        left: 210px;
+
+        @media screen and (max-width: 1060px){
+          left: 270px;
+        };
+
+        @media screen and (max-width: 1024px) {
+          left: 380px;
+        };
+
+        @media screen and (max-width: 917px) {
+          left: 455px;
+        }
+
+        @media screen and (max-width: 819px){
+          width: 362px;
+          height: 635px;
+          left: 360px;
+          top: 55px;
+        };
+
+        @media screen and (max-width: 719px) {
+          width: 262px;
+          height: 535px;
+          left: 276px;
+          top: 144px;
+        };
+
+        @media screen and (max-width: 618px) {
+          position: static;
+          display: block;
+          margin: 0 auto;
+          width: 462px;
+          height: 735px;
+        }
+
+        @media screen and (max-width: 545px) {
+          width: 362px;
+          height: 635px;
+        }
+
+        @media screen and (max-width: 426px) {
+          width: 262px;
+          height: 535px;
+        }
+      }
+
+      &:last-of-type {
+        @media screen and (max-width: 819px) {
+          width: 385px;
+          height: 635px;
+        };
+
+        @media screen and (max-width: 719px) {
+          width: 285px;
+          height: 535px;
+        }
+
+        @media screen and (max-width: 618px) {
+          width: 485px;
+          height: 735px;
+          bottom: 615px;
+        }
+
+        @media screen and (max-width: 545px) {
+          width: 385px;
+          height: 635px;
+        }
+
+        @media screen and (max-width: 426px) {
+          width: 285px;
+          height: 535px;
+          bottom: 400px;
+        }
+      }
+    }
+  }
+
+  &__bcg {
+
+    @media screen and (max-width: 618px) {
+      max-height: 1500px;
+    }
+
+    @media screen and (max-width: 545px) {
+      max-height: 1260px;
+    }
+  }
+}
+
+// Deliver Particle ========================================================================================================
+
+.deliver-particle {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $padding-frame;
+
+  @media screen and (max-width: 618px){
+    flex-wrap: wrap;
+  };
+
+  @media screen and (max-width: 350px){
+    margin-top: 120px;
+  };
+
+  &__logo {
+    width: 450px;
+    padding: 0 5px;
+
+    @media screen and (max-width: 618px){
+      margin: 0 auto;
+      text-align: center;
+    };
+  }
+
+  &__btn {
+
+    width: 485px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1005px){
+      flex-wrap: wrap;
+      width: 300px;
+      justify-content: flex-end;
+
+      @media screen and (max-width: 618px){
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 30px;
+      };
+
+      & a:last-of-type {
+        margin-top: 10px;
+
+        
+      }
+    };
+
+    & .btn_wide {
+      width: 250px;
+    }
+  }
+
+  &__hr {
+    margin-top: 85px;
+  }
+}
